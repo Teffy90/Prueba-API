@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Convocatoria 7</title>
+  </head>
+  <body>
+    <h1>Prueba técnica convocatoria 7</h1>
+    <br><br>
+    <div class="container">
+        <h6>IP 197.000.000.000 hasta 197.999.999.999</h6>
+        <p> Se hace la consulta en la BD.<br>
+            SELECT v.ip , v.visit_date, w."name" , w."domain"  
+            FROM visits v, websites w
+            where v.id = w.id and v.ip between '197.000.000.000' and '197.999.999.999';<br>
+            Y se obtiene el resultado que aparece en la tabla.
+        </p>
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">IP</th>
+                <th scope="col">Fecha de la Visita</th>
+                <th scope="col">Nombre Página</th>
+                <th scope="col">Dominio Página</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">197.194.197.28</th>
+                <td>2021-11-19T08:37:25.946Z</td>
+                <td>Cremin - Stehr</td>
+                <td>https://alta.net</td>
+                </tr>
+                <tr>
+                <th scope="row">2</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-primary">Guardar</button>
+    </div>
+    
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
